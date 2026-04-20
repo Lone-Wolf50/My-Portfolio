@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kelvin Asamoah — Frontend Developer</title>
+  <meta name="description" content="Kelvin Asamoah is a passionate frontend developer building beautiful, functional web experiences with React, Vite, and modern technologies.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="por.css">
+  <script src="https://kit.fontawesome.com/50a9c860ee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div id="cursor-ring"></div>
+  <div id="cursor-dot"></div>
+
+  <!-- ===== CANVAS PARTICLE BG ===== -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ===== NAV ===== -->
+  <header id="site-header">
+    <nav id="main-nav">
+      <a href="#hero" class="nav-logo">KA<span class="logo-dot">.</span></a>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Hire Me</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Available for work
+      </div>
+      <h1 class="hero-name">
+        <span class="name-line" id="hero-name-line">Kelvin Asamoah</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">I build </span>
+        <span id="typewriter" class="typewriter-text"></span>
+        <span class="typewriter-cursor">|</span>
+      </div>
+      <p class="hero-tagline">
+        Crafting pixel-perfect digital experiences where code meets creativity.<br>
+        From concept to deployment — I ship things that matter.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fa-solid fa-rocket"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-ghost">
+          <i class="fa-solid fa-paper-plane"></i> Let's Talk
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-target="4">0</span>+
+          <span class="stat-label">Projects Shipped</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="3">0</span>+
+          <span class="stat-label">Tech Stacks</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-target="100">0</span>%
+          <span class="stat-label">Commitment</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">The story <span class="gradient-text">behind the code</span></h2>
+      <div class="about-grid">
+        <div class="about-photo-col">
+          <div class="about-photo-frame">
+            <div class="about-photo-bg"></div>
+            <div class="about-avatar">
+              <div class="avatar-initials">KA</div>
+              <div class="avatar-ring"></div>
+              <div class="avatar-ring-2"></div>
+            </div>
+            <div class="about-photo-card">
+              <div class="photo-card-icon"><i class="fa-solid fa-code"></i></div>
+              <div>
+                <div class="photo-card-title">Full-Stack Dev</div>
+                <div class="photo-card-sub">React · Node · Supabase</div>
+              </div>
+            </div>
+            <div class="about-photo-card about-photo-card-2">
+              <div class="photo-card-icon pulse-green"><i class="fa-solid fa-circle-check"></i></div>
+              <div>
+                <div class="photo-card-title">Open to Opportunities</div>
+                <div class="photo-card-sub">Remote / On-site</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text-col">
+          <p class="about-hello">Hi, I'm <strong>Asamoah Kelvin</strong> 👋</p>
+          <p class="about-bio">
+            An ambitious developer with a relentless drive for building things that are 
+            <em>beautiful</em>, <em>fast</em>, and <em>meaningful</em>. I started this journey 
+            fueled by curiosity — and every project has deepened that passion.
+          </p>
+          <p class="about-bio">
+            I specialise in React ecosystems, full-stack development with Supabase & Express, 
+            and integrating cutting-edge AI APIs to create intelligent user experiences. 
+            I don't just write code — I craft solutions.
+          </p>
+          <div class="about-tags">
+            <span class="about-tag"><i class="fa-brands fa-react"></i> React 19</span>
+            <span class="about-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
+            <span class="about-tag"><i class="fa-solid fa-database"></i> Supabase</span>
+            <span class="about-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+            <span class="about-tag"><i class="fa-solid fa-robot"></i> Gemini AI</span>
+            <span class="about-tag"><i class="fa-solid fa-bolt"></i> Vite</span>
+          </div>
+          <div class="about-actions">
+            <a href="https://github.com/Lone-Wolf50" target="_blank" class="btn btn-primary btn-sm">
+              <i class="fa-brands fa-github"></i> GitHub Profile
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-inner">
+      <div class="section-label">Expertise</div>
+      <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+
+      <div class="skills-tabs">
+        <button class="skill-tab active" data-tab="tech">Tech Stack</button>
+        <button class="skill-tab" data-tab="tools">Tools</button>
+        <button class="skill-tab" data-tab="soft">Soft Skills</button>
+      </div>
+
+      <div class="skills-panel active" id="tab-tech">
+        <div class="skill-bars-grid">
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name"><i class="fa-brands fa-html5"></i> HTML & CSS</span>
+              <span class="skill-bar-pct">90%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="90"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name"><i class="fa-brands fa-js"></i> JavaScript / TypeScript</span>
+              <span class="skill-bar-pct">82%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="82"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name"><i class="fa-brands fa-react"></i> React & Vite</span>
+              <span class="skill-bar-pct">85%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name"><i class="fa-solid fa-server"></i> Express & Node.js</span>
+              <span class="skill-bar-pct">75%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name"><i class="fa-solid fa-database"></i> SQL & Supabase</span>
+              <span class="skill-bar-pct">78%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="78"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-header">
+              <span class="skill-bar-name"><i class="fa-solid fa-cloud"></i> Cloud & Deployment</span>
+              <span class="skill-bar-pct">65%</span>
+            </div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-pct="65"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-panel" id="tab-tools">
+        <div class="tools-grid">
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fa-solid fa-code"></i></div>
+            <div class="tool-name">VS Code</div>
+            <div class="tool-desc">Primary IDE with custom extensions for peak developer experience</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fa-brands fa-github"></i></div>
+            <div class="tool-name">Git & GitHub</div>
+            <div class="tool-desc">Version control, PRs, branching workflows, and open source collaboration</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fa-solid fa-bolt"></i></div>
+            <div class="tool-name">Vite</div>
+            <div class="tool-desc">Blazing-fast build tool for modern web projects</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fa-solid fa-robot"></i></div>
+            <div class="tool-name">Gemini API</div>
+            <div class="tool-desc">AI-powered features using Google's latest generative models</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fa-solid fa-credit-card"></i></div>
+            <div class="tool-name">Paystack</div>
+            <div class="tool-desc">Payment gateway integration for African markets</div>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon"><i class="fa-solid fa-triangle-exclamation" style="color:var(--accent)"></i></div>
+            <div class="tool-name">Vercel</div>
+            <div class="tool-desc">Zero-config deployment and edge hosting</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-panel" id="tab-soft">
+        <div class="soft-skills-grid">
+          <div class="soft-card">
+            <div class="soft-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3>Problem Solving</h3>
+            <p>I love dissecting complex bugs and architect creative solutions from first principles.</p>
+          </div>
+          <div class="soft-card">
+            <div class="soft-icon"><i class="fa-solid fa-repeat"></i></div>
+            <h3>Consistency</h3>
+            <p>Progress over perfection — I ship, iterate, and improve. Every day counts.</p>
+          </div>
+          <div class="soft-card">
+            <div class="soft-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+            <h3>Adaptability</h3>
+            <p>New tools, new challenges, new feedback — I pivot fast and embrace change.</p>
+          </div>
+          <div class="soft-card">
+            <div class="soft-icon"><i class="fa-solid fa-comments"></i></div>
+            <h3>Communication</h3>
+            <p>Clear, proactive, and honest — I keep teams aligned and projects moving.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <div class="section-inner">
+      <div class="section-label">Portfolio</div>
+      <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="section-subtitle">Real products. Real users. Real impact.</p>
+      <div class="projects-grid" id="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-inner">
+      <div class="section-label">Get In Touch</div>
+      <h2 class="section-title">Let's build something <span class="gradient-text">remarkable</span></h2>
+      <p class="section-subtitle">Have a project in mind? Looking for a dedicated dev? I'm ready.</p>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <div class="contact-card-label">GitHub</div>
+              <a href="https://github.com/Lone-Wolf50" target="_blank" class="contact-card-value">@Lone-Wolf50</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <div class="contact-card-label">LinkedIn</div>
+              <a href="https://www.linkedin.com/in/kelvin-asamoah-15632b326?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="contact-card-value">Kelvin Asamoah</a>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-card-icon"><i class="fa-brands fa-whatsapp"></i></div>
+            <div>
+              <div class="contact-card-label">WhatsApp</div>
+              <a href="https://wa.me/233209695038" target="_blank" class="contact-card-value">Message Me</a>
+            </div>
+          </div>
+          <div class="availability-badge">
+            <span class="avail-dot"></span>
+            <span>Currently available for freelance & full-time roles</span>
+          </div>
+        </div>
+      <form class="contact-form" id="contact-form" action="https://formspree.io/f/xbdqkyrp" method="POST">
+  <div class="form-group">
+    <label for="contact-name">Your Name</label>
+    <input type="text" id="contact-name" name="name" placeholder="John Doe" required>
+  </div>
+  <div class="form-group">
+    <label for="contact-email">Email Address</label>
+    <input type="email" id="contact-email" name="email" placeholder="john@company.com" required>
+  </div>
+  <div class="form-group">
+    <label for="contact-msg">Message</label>
+    <textarea id="contact-msg" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary btn-full">
+    <i class="fa-solid fa-paper-plane"></i> Send Message
+  </button>
+  <div id="form-feedback" class="form-feedback"></div>
+</form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="site-footer">
+    <div class="footer-inner">
+      <div class="footer-logo">KA<span class="logo-dot">.</span></div>
+      <p class="footer-tagline">Building the web, one pixel at a time.</p>
+      <div class="footer-links">
+        <a href="https://github.com/Lone-Wolf50" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/kelvin-asamoah-15632b326?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://wa.me/233209695038" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 Kelvin Asamoah. Crafted with passion & caffeine.</p>
+    </div>
+  </footer>
+
+  <script src="por.js"></script>
+</body>
+</html>
