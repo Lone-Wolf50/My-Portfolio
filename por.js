@@ -10,12 +10,35 @@ const projects = [
     tech: ['React 19', 'Vite', 'Express 5', 'Supabase', 'Tailwind', 'PWA'],
     live: 'https://verpembodiments.com',
     github: 'https://github.com/Lone-Wolf50/Verps',
-    color: 'rgba(124,58,237,0.3)',
     slides: [
-      { icon: 'fa-solid fa-cart-shopping', label: 'Premium E-Commerce Storefront', color: 'rgba(124,58,237,0.25)' },
-      { icon: 'fa-solid fa-mobile-screen', label: 'Progressive Web App — Installable', color: 'rgba(6,182,212,0.2)' },
-      { icon: 'fa-solid fa-shield-halved', label: 'OTP Auth + Paystack Payments', color: 'rgba(245,158,11,0.2)' },
-      { icon: 'fa-solid fa-screwdriver-wrench', label: 'Admin Console + Order Management', color: 'rgba(16,185,129,0.2)' },
+      {
+        icon: 'fa-solid fa-cart-shopping',
+        title: 'E-Commerce Storefront',
+        detail: 'Fully responsive product catalogue, cart, and a polished checkout flow built for conversion.',
+        grad: 'linear-gradient(135deg,#3b0764 0%,#1e1b4b 100%)',
+        accent: '#a855f7'
+      },
+      {
+        icon: 'fa-solid fa-mobile-screen',
+        title: 'Progressive Web App',
+        detail: 'Installable on any device with offline support, push-ready architecture and fast load times.',
+        grad: 'linear-gradient(135deg,#0c4a6e 0%,#0f172a 100%)',
+        accent: '#06b6d4'
+      },
+      {
+        icon: 'fa-solid fa-shield-halved',
+        title: 'OTP Auth & Payments',
+        detail: 'Secure one-time-password authentication paired with Paystack for seamless GHS transactions.',
+        grad: 'linear-gradient(135deg,#78350f 0%,#1c1917 100%)',
+        accent: '#f59e0b'
+      },
+      {
+        icon: 'fa-solid fa-screwdriver-wrench',
+        title: 'Admin Console',
+        detail: 'Full back-office dashboard — manage orders, inventory, users and analytics in real time.',
+        grad: 'linear-gradient(135deg,#064e3b 0%,#0f172a 100%)',
+        accent: '#10b981'
+      },
     ]
   },
   {
@@ -24,11 +47,28 @@ const projects = [
     tech: ['React 19', 'Express 5', 'Supabase', 'Paystack', 'Nodemailer'],
     live: 'https://my-ecomerce-gygn.vercel.app/',
     github: 'https://github.com/Lone-Wolf50/My-Ecomerce',
-    color: 'rgba(236,72,153,0.25)',
     slides: [
-      { icon: 'fa-solid fa-bag-shopping', label: 'Luxury Bag Catalogue & Cart', color: 'rgba(236,72,153,0.2)' },
-      { icon: 'fa-solid fa-credit-card', label: 'Paystack GHS Payment Integration', color: 'rgba(6,182,212,0.2)' },
-      { icon: 'fa-solid fa-comments', label: 'Live Chat + Email Notifications', color: 'rgba(245,158,11,0.2)' },
+      {
+        icon: 'fa-solid fa-bag-shopping',
+        title: 'Luxury Bag Catalogue',
+        detail: 'Curated product display with smooth filtering, detail pages, and a streamlined add-to-cart flow.',
+        grad: 'linear-gradient(135deg,#831843 0%,#1c1917 100%)',
+        accent: '#ec4899'
+      },
+      {
+        icon: 'fa-solid fa-credit-card',
+        title: 'Paystack GHS Payments',
+        detail: 'Integrated Paystack for secure Ghana Cedi transactions with real-time payment confirmation.',
+        grad: 'linear-gradient(135deg,#0c4a6e 0%,#0f172a 100%)',
+        accent: '#38bdf8'
+      },
+      {
+        icon: 'fa-solid fa-comments',
+        title: 'Live Chat & Emails',
+        detail: 'Built-in real-time chat support and automated transactional emails via Nodemailer.',
+        grad: 'linear-gradient(135deg,#3b1f00 0%,#1c1917 100%)',
+        accent: '#f59e0b'
+      },
     ]
   },
   {
@@ -37,24 +77,58 @@ const projects = [
     tech: ['TypeScript', 'Vite', 'Gemini API', 'CSS'],
     live: 'https://email-app-ecru.vercel.app/',
     github: 'https://github.com/Lone-Wolf50/EmailApp',
-    color: 'rgba(6,182,212,0.25)',
     slides: [
-      { icon: 'fa-solid fa-microphone', label: 'Speech to Formal Email', color: 'rgba(124,58,237,0.2)' },
-      { icon: 'fa-solid fa-robot', label: 'Powered by Gemini AI', color: 'rgba(16,185,129,0.2)' },
-      { icon: 'fa-solid fa-envelope', label: 'Instant Polished Email Output', color: 'rgba(245,158,11,0.2)' },
+      {
+        icon: 'fa-solid fa-microphone',
+        title: 'Voice Input',
+        detail: 'Speak naturally — the app captures your voice and transcribes it into raw text instantly.',
+        grad: 'linear-gradient(135deg,#3b0764 0%,#0f172a 100%)',
+        accent: '#c084fc'
+      },
+      {
+        icon: 'fa-solid fa-robot',
+        title: 'Gemini AI Processing',
+        detail: "Google's Gemini API reformats your spoken words into a polished professional email.",
+        grad: 'linear-gradient(135deg,#064e3b 0%,#0f172a 100%)',
+        accent: '#34d399'
+      },
+      {
+        icon: 'fa-solid fa-envelope-open-text',
+        title: 'Instant Email Output',
+        detail: 'Copy your beautifully structured email with one click — ready to send in seconds.',
+        grad: 'linear-gradient(135deg,#78350f 0%,#1c1917 100%)',
+        accent: '#fbbf24'
+      },
     ]
   },
   {
     name: 'Library Ads AI',
-    desc: 'AI-assisted app that makes library idea management effortless. Uses Gemini API to generate and organise advertising content intelligently.',
+    desc: 'AI-assisted app that makes library idea management effortless. Uses Gemini AI to generate and organise advertising content intelligently.',
     tech: ['TypeScript', 'Vite', 'Gemini API', 'AI Studio'],
     live: 'https://ai.studio/apps/5bdccbe8-4064-46ee-a780-2955bc8b6e52',
     github: 'https://github.com/Lone-Wolf50/LibraryAds',
-    color: 'rgba(245,158,11,0.25)',
     slides: [
-      { icon: 'fa-solid fa-book-open', label: 'Library Idea Management', color: 'rgba(245,158,11,0.2)' },
-      { icon: 'fa-solid fa-wand-magic-sparkles', label: 'Gemini AI Content Generation', color: 'rgba(124,58,237,0.2)' },
-      { icon: 'fa-solid fa-pen-to-square', label: 'Google AI Studio App', color: 'rgba(16,185,129,0.2)' },
+      {
+        icon: 'fa-solid fa-book-open',
+        title: 'Idea Management',
+        detail: 'Centralised space to store, organise, and browse library advertising concepts and campaigns.',
+        grad: 'linear-gradient(135deg,#78350f 0%,#1c1917 100%)',
+        accent: '#fbbf24'
+      },
+      {
+        icon: 'fa-solid fa-wand-magic-sparkles',
+        title: 'AI Content Generation',
+        detail: 'Prompt Gemini AI to write, refine, and suggest engaging library promo content in seconds.',
+        grad: 'linear-gradient(135deg,#3b0764 0%,#1e1b4b 100%)',
+        accent: '#a78bfa'
+      },
+      {
+        icon: 'fa-solid fa-layer-group',
+        title: 'Google AI Studio App',
+        detail: 'Deployed as a full AI Studio application — shareable, scalable, and always available online.',
+        grad: 'linear-gradient(135deg,#064e3b 0%,#0f172a 100%)',
+        accent: '#6ee7b7'
+      },
     ]
   }
 ];
@@ -75,10 +149,17 @@ function buildCard(p, index) {
   p.slides.forEach(s => {
     const slide = document.createElement('div');
     slide.className = 'proj-slide';
-    slide.style.setProperty('--slide-color', s.color);
+    slide.style.background = s.grad;
     slide.innerHTML = `
-      <i class="${s.icon} proj-slide-icon"></i>
-      <span class="proj-slide-label">${s.label}</span>
+      <div class="slide-inner">
+        <div class="slide-icon-wrap" style="background:${s.accent}22;border-color:${s.accent}44">
+          <i class="${s.icon} proj-slide-icon" style="color:${s.accent}"></i>
+        </div>
+        <div class="slide-text">
+          <p class="slide-title" style="color:${s.accent}">${s.title}</p>
+          <p class="slide-detail">${s.detail}</p>
+        </div>
+      </div>
     `;
     track.appendChild(slide);
   });
@@ -428,26 +509,46 @@ projects.forEach((p, i) => grid.appendChild(buildCard(p, i)));
   });
 })();
 
-/* ===== CONTACT FORM ===== */
+/* ===== CONTACT FORM — FORMSPREE ===== */
 (function initForm() {
   const form = document.getElementById('contact-form');
   const feedback = document.getElementById('form-feedback');
+  const ENDPOINT = form.action; // reads from the form's action attribute
 
-  form.addEventListener('submit', e => {
+  form.addEventListener('submit', async e => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     btn.innerHTML = '<i class="fa-solid fa-circle-notch fa-spin"></i> Sending...';
     btn.disabled = true;
+    feedback.className = 'form-feedback';
 
-    // Simulate send (replace with real EmailJS / Formspree etc.)
-    setTimeout(() => {
-      feedback.className = 'form-feedback success';
-      feedback.textContent = '🎉 Message sent! I\'ll get back to you soon.';
-      form.reset();
+    try {
+      const res = await fetch(ENDPOINT, {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: new FormData(form)
+      });
+
+      if (res.ok) {
+        feedback.className = 'form-feedback success';
+        feedback.textContent = '🎉 Message sent! I\'ll get back to you soon.';
+        form.reset();
+      } else {
+        const data = await res.json();
+        const msg = data.errors
+          ? data.errors.map(err => err.message).join(', ')
+          : 'Something went wrong. Please try again.';
+        feedback.className = 'form-feedback error';
+        feedback.textContent = '⚠️ ' + msg;
+      }
+    } catch (_) {
+      feedback.className = 'form-feedback error';
+      feedback.textContent = '⚠️ Network error. Please check your connection and try again.';
+    } finally {
       btn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> Send Message';
       btn.disabled = false;
-      setTimeout(() => { feedback.className = 'form-feedback'; }, 5000);
-    }, 1600);
+      setTimeout(() => { feedback.className = 'form-feedback'; }, 6000);
+    }
   });
 })();
 
